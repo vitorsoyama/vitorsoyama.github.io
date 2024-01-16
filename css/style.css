@@ -181,6 +181,7 @@ body {
     height: auto;
     display: block;
     width: 30dvw;
+    height: 250px;
     cursor: pointer;
 }
 
@@ -265,6 +266,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
+    height: 275px;
     z-index: 1;
   }
   
@@ -334,7 +336,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
-    height: 62dvh;
+    height: 460px;
     width: 7dvw;
 
   }
