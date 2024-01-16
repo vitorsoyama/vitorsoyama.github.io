@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Horizontal</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <nav id="menu-h">
+        <ul>
+            <li>
+                <button class="btn" onClick='window.location="#banner"'>       
+                    <span>HOME</span>
+                </button>
+            </li>
+
+            <li>
+                <button class="btn" onClick='window.location="#sobre"'>       
+                    <span>Sobre</span>
+                </button>
+            </li>
+            <li>
+                <button class="btn" onClick='window.location="#projetos"'>       
+                    <span>Projetos</span>
+                </button>
+            </li>
+            <button class="btn">       
+                <span>Contatos</span>
+            </button>
+            
+        </ul>
+    </nav>
+    <div>
+    <div class = "banner" id = "banner">
+        <div class = "col">
+            <span>
+                Olá!! Sou  <strong class = "destaque">Vitor Soyama</strong>
+            </span>
+            <p class = "subtitulo">
+                Programador e Engenheiro Eletricista
+            </p>
+        </div>
+        <div class = "col">
+            <img src="img/profile.png" alt="">
+        </div>
+    </div>
+    <div class = "sobre" id = "sobre">
+        <div class="tituloSobre">
+            <hr><p class="titulo"> Sobre Mim  </p><hr>
+        </div>
+        <div class="descrSobre">
+            <span class="descricao">Eu sou Vitor Issamu, um engenheiro eletricista e técnico de TI apaixonado por aplicar programação no campo da ciência de dados. Com uma base sólida em tecnologia de TI e conhecimentos robustos em engenharia elétrica, meu objetivo é integrar essas duas áreas para criar soluções tecnológicas inovadoras.</span>
+        </div>
+        <div class = "habilidades">
+            <div class="tituloHabilidades">
+                <p class="titulo" style="text-align: left;"> Habilidades  </p>
+            </div>
+            <div class = "habilidadesIcone">
+                <div class = "icone">
+                    <ion-icon name="logo-python"></ion-icon>
+                    <p>Python</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                    <p>Data Science</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <p>HTML</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <p>CSS</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    <p>JavaScript</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="logo-microsoft"></ion-icon>
+                    <p>Pacote Office</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="logo-amazon"></ion-icon>
+                    <p>AWS</p>
+                </div>
+                <div class= "icone">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+                    <p>SCRUM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<div id = "projetos">
+    <div class="tituloProjetos" id="projetos">
+        <hr><p class="titulo"> Projetos  </p><hr>
+    </div>
+    <div class="projetos">
+        <div>
+            <div class = "colProj">
+                <img id = "projeto1" src="img/proj1.png" alt="" onclick="openImage('projeto1')">
+                <Br>
+                   <p  class = "descricao"> Analise estatística da Covid-19</p>
+
+            </div>
+            <div class = "colProj">
+                <img id = "projeto2" src="img/projeto2/proj-6.png" alt="" onclick="openImage('projeto2')">
+                <Br>
+                    <p  class = "descricao"> Machine Learn aplicado a um problema</p>
+            </div>
+            <div class = "colProj">
+                <img id = "projeto3" src="img/projeto3/proj-4.png" alt="" onclick="openImage('projeto3')">
+                <Br>
+                    <p  class = "descricao"> Recomendador de música</p>
+            </div>
+
+        </div>
+        <div>
+            <div class = "colProj">
+                <iframe title="Report Section" width=460 height="250" src="https://app.powerbi.com/view?r=eyJrIjoiNjZjMjFkMDEtODQ2Yi00YTZlLWE2OTAtNzAwMTEwMWIyZTZiIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                <Br>
+                    <p  class = "descricao"> Projeto de PowerBI</p>
+            </div>
+            <div class = "colProj">
+                <img src="img/proj1.png" alt="">
+                <Br>
+                    <p  class = "descricao"> Analise estatística da Covid-19</p>
+            </div>
+            <div class = "colProj">
+                <img src="img/proj1.png" alt="">
+                <Br>
+                    <p  class = "descricao"> Analise estatística da Covid-19</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/vitor-soyama"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+
+        </footer>
+    </div>
+    <div id="myModal" class="modal" data-backdrop="false">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <div class="modal-content">
+            <div class="btn-container">
+                <button class="btn-img-gallery" id="prev">&larr;</button>
+            </div>
+            <div class = "rotate-gallery">
+                <span style="--i: 1" id = "img01">
+                <img id = "img-01"
+
+                />
+                </span>
+                <span style="--i: 2"id = "img01">
+                <img id = "img-02"
+
+                    />
+                </span>
+                <span style="--i: 3"id = "img01">
+                <img id = "img-03"
+
+                    />
+                </span>
+                <span style="--i: 4"id = "img01">
+                <img id = "img-04"
+
+                    />
+                </span>
+                <span style="--i: 5"id = "img01">
+                    <img id = "img-05"
+
+                    />
+                </span>
+                <span style="--i: 6"id = "img01">
+                    <img id = "img-06"
+
+                    />
+                </span>
+            </div>
+            <div class="btn-container">
+                <button class="btn-img-gallery" id="next">&rarr;</button>
+            </div>
+
+          </div>
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+</body>
+
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+<script src = "js\index.js"></script>
+
+</html>
