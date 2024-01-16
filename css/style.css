@@ -189,6 +189,7 @@ body {
     cursor: pointer;
 }
 
+/*footer*/
 
 .footer-basic {
     padding:40px 0;
@@ -216,6 +217,11 @@ body {
     color:white;
 
   }
+
+  .footer-basic .social a ion-icon {
+    margin-top: 15px ;
+
+  }
   
   .footer-basic .social > a:hover {
     width:8dvw;
@@ -224,7 +230,10 @@ body {
     font-size: 6dvw;
 
   }
-  
+
+
+
+  /* Modal Content (image) */
   .modal {
     z-index:999;
     display: none; /* Hidden by default */
@@ -244,7 +253,7 @@ body {
 
     display: inline;
   }
-/* Modal Content (image) */
+
 .rotate-gallery {
 /*     align-content: center;
     margin: auto;
