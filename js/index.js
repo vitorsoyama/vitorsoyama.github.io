@@ -62,4 +62,45 @@ function rotate() {
 }
 
 
+const mq = window.matchMedia("(max-width: 600px)");
+if(mq.matches){
+  const mainNav = document.getElementById("menu-h");
+  const menuIcon = document.getElementById("menu-icon");
+
+
+  menuIcon.addEventListener('click', () => {
+    if(mainNav.style.display != "flex"){
+      mainNav.style.display = "flex";
+      menuIcon.innerHTML= "X";
+    }
+    else{
+      mainNav.style.display = "none";
+      menuIcon.innerHTML = "MENU";
+    }
+  });
+
+  
+}
+
+function buttonClick(buttonName){
+  const button = document.getElementById("btn-"+buttonName);
+  const mq = window.matchMedia("(max-width: 600px)");
+  window.location="#"+buttonName;
+  if(mq.matches){
+    const mainNav = document.getElementById("menu-h");
+    const menuIcon = document.getElementById("menu-icon");
+    button.addEventListener('click', () => {
+      if(mainNav.style.display != "flex"){
+        mainNav.style.display = "flex";
+        menuIcon.innerHTML= "X";
+      }
+      else{
+        mainNav.style.display = "none";
+        menuIcon.innerHTML = "MENU";
+      }
+    });
+  }
+
+}
+
   

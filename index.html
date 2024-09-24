@@ -12,28 +12,32 @@
 
 <body>
 
-    <nav id="menu-h">
+    <div id ="menu-icon">
+        Menu
+    </div>
+
+    <nav id="menu-h" class="menu-h">
+
         <ul>
             <li>
-                <button class="btn" onClick='window.location="#banner"'>       
+                <button id="btn-home" class="btn" onClick='buttonClick("home")'>       
                     <span>HOME</span>
                 </button>
             </li>
 
             <li>
-                <button class="btn" onClick='window.location="#sobre"'>       
+                <button id="btn-sobre" class="btn" onClick='buttonClick("sobre")'>       
                     <span>Sobre</span>
                 </button>
             </li>
             <li>
-                <button class="btn" onClick='window.location="#projetos"'>       
+                <button id="btn-projetos" class="btn" onClick='buttonClick("projetos")'>       
                     <span>Projetos</span>
                 </button>
             </li>
-            <button class="btn" onClick='window.location="#contatos"'>       
+            <button id="btn-contato" class="btn" onClick='buttonClick("contato")'>       
                 <span>Contatos</span>
             </button>
-            
         </ul>
     </nav>
     <div>
@@ -63,36 +67,36 @@
             </div>
             <div class = "habilidadesIcone">
                 <div class = "icone">
-                    <ion-icon name="logo-python"></ion-icon>
-                    <p>Python</p>
+                    <div class = "imgIcone"><ion-icon name="logo-python"></ion-icon></div>
+                    <div class = "txtIcone"><p>Python</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="analytics-outline"></ion-icon>
-                    <p>Data Science</p>
+                    <div class = "imgIcone"><ion-icon name="analytics-outline"></ion-icon></div>
+                    <div class = "txtIcone"><p>Data Science</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="logo-html5"></ion-icon>
-                    <p>HTML</p>
+                    <div class = "imgIcone"><ion-icon name="logo-html5"></ion-icon></div>
+                    <div class = "txtIcone"><p>HTML</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="logo-css3"></ion-icon>
-                    <p>CSS</p>
+                    <div class = "imgIcone"><ion-icon name="logo-css3"></ion-icon></div>
+                    <div class = "txtIcone"><p>CSS</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    <p>JavaScript</p>
+                    <div class = "imgIcone"><ion-icon name="logo-javascript"></ion-icon></div>
+                    <div class = "txtIcone"><p>JavaScript</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="logo-microsoft"></ion-icon>
-                    <p>Pacote Office</p>
+                    <div class = "imgIcone"><ion-icon name="logo-microsoft"></ion-icon></div>
+                    <div class = "txtIcone"><p>Pacote Office</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="logo-amazon"></ion-icon>
-                    <p>AWS</p>
+                    <div class = "imgIcone"><ion-icon name="logo-amazon"></ion-icon></div>
+                    <div class = "txtIcone"><p>AWS</p></div>
                 </div>
                 <div class= "icone">
-                    <ion-icon name="speedometer-outline"></ion-icon>
-                    <p>SCRUM</p>
+                   <div class = "imgIcone"> <ion-icon name="speedometer-outline"></ion-icon></div>
+                    <div class = "txtIcone"><p>SCRUM</p></div>
                 </div>
             </div>
 
@@ -134,10 +138,10 @@
                     <p  class = "descricao"> Projeto de PowerBI</p>
             </div>
             <div class = "colProj">
-                <img src="img/em-breve.jpg" alt="">
-                <a href="http://www.freepik.com">Designed by starline / Freepik</a>
+                <img id = "projeto4" src="img/projeto4/proj-1.png" alt="" onclick="openImage('projeto4')">
+                <a href="https://www.kaggle.com/code/vitorsoyama/notebooke412c7356c">Link do projeto</a>
                 <Br>
-                    <p  class = "descricao"> Em breve</p>
+                    <p  class = "descricao"> Previsão de demanda de bicicleta</p>
             </div>
             <div class = "colProj">
                 <img src="img/em-breve.jpg" alt="">
@@ -157,8 +161,8 @@
                 <a href="mailto: vitorissamu.vs@gmail.com?subject=Contato pelo Site"><ion-icon name="mail-outline"></ion-icon></a>
                 <a href="https://github.com/vitorsoyama"><ion-icon name="logo-github"></ion-icon></a>
                 <a href="https://www.facebook.com/vitorissamu"><ion-icon name="logo-facebook"></ion-icon></a>
+              
             </div>
-
         </footer>
     </div>
     <div id="myModal" class="modal" data-backdrop="false">
@@ -216,5 +220,7 @@
 
 <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 <script src = "js\index.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
 
 </html>

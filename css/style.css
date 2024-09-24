@@ -10,26 +10,67 @@
 body {
     background-color: #4C175C;
 }
+#menu-icon{
+  display: none;
+}
 
-#menu-h{
+@media(max-width: 600px){
+
+  #menu-icon{
+    display: block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2em;
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+  }
+  #menu-h{
+    display: none;
+  }
+}
+.menu-h{
     background-color: #341D3B;
-    padding-left: 30dvw;
-    position: fixed; /* Set the navbar to fixed position */
+    padding-left: 0;
+    position: sticky; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index:900;
+    display: flex;
+    justify-content: center;
 }
 
-#menu-h ul {
+@media(max-width: 600px) {
+
+  .menu-h a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+.menu-h ul {
     /* max-width: 800px; */
     list-style: none;
     padding: 0;
+
 }
 
-#menu-h ul li {
-    display: inline;
+@media(max-width: 2000px){
+  .menu-h ul li {
+    float: left;
 }
+ }
 
+@media(max-width: 600px){
+  .menu-h ul li {
+    float: none;
+    width: 100dvw;
+}
+ }
 
 
 /* #menu-h ul li:last-child a {
@@ -37,7 +78,9 @@ body {
     background-color: rgb(24, 139, 233);
 } */
 
-.btn {
+
+
+  .btn {
     width: 10dvw;
     padding: 0;
     cursor: pointer;
@@ -47,10 +90,24 @@ body {
     transition: 1s ease-in-out;
   }
 
+   @media(max-width: 500px){
+    .btn {
+      width: 100dvw;
+      padding: 0;
+      cursor: pointer;
+      background: transparent;
+      border: transparent;
+      outline: none;
+      transition: 1s ease-in-out;
+    }
+   }
+  
+
   .btn:hover {
     transition: .4s ease-in-out;
     background: #4F95DA;
   }
+
 
   .btn span {
     color: #FFF;
@@ -59,6 +116,18 @@ body {
     display: inline-block;
     text-decoration: none;
   }
+
+
+   @media(max-width: 500px){
+    .btn span {
+      color: #FFF;
+      font-size: 10px;
+      padding: 20px;
+      display: inline-block;
+      text-decoration: none;
+    }
+   }
+
 
 
   .titulo{
@@ -105,18 +174,21 @@ body {
     color: gray;
 }
 
-#sobre{
-    padding-top: 10dvh;
-    height: 101dvh;
-}
+
 
 
 
 .descrSobre{
-    margin-top: 100px;
+    margin-top: 9dvh;
     width: 50dvw;
     padding-bottom: 100px;
 
+}
+
+@media(max-width: 600px){
+  .descricao{
+    font-size: 10px;
+  }
 }
 
 .descricao{
@@ -127,27 +199,47 @@ body {
 
 }
 
+@media(max-width: 600px){
+  .habilidades .habilidadesIcone .icone .imgIcone{
+    font-size: 50px;
+    width:25%;
+    height:10dvw;
+    border-radius:15%;
+    border:2px solid #ccc;
+    background-color:grey;
+}
+  .habilidades .habilidadesIcone .icone{
+    display: flex;
+    width: 100dvw;
+  }
+  .habilidades .habilidadesIcone .icone .txtIcone{
+    font-size: 1px;
+  }
+
+}
 
 .habilidades .habilidadesIcone .icone{
     float:left;
     margin: 0 1dvw 0 1dvw;
 }
 
-.habilidades .habilidadesIcone .icone > ion-icon{
-    font-size: 6dvw;
+.habilidades .habilidadesIcone .icone .imgIcone{
+    font-size: 7dvw;
     width:8dvw;
     height:8dvw;
-    display:inline-block;
+    display:block;
     border-radius:15%;
     border:2px solid #ccc;
     background-color:grey;
-    display: block;
+    text-align: center;
+
 }
 
-.habilidades .habilidadesIcone .icone >  p{
-    font-size: 2dvw;
+.habilidades .habilidadesIcone .icone .txtIcone{
+    font-size: 30px;
     color: white;
     text-align: center;
+    width: 10dvw;
 
 }
 
@@ -159,9 +251,13 @@ body {
 }
 
 #projetos{
+  display: inline-block;
     margin-top: 3dvh;
     padding-top: 4dvh;
 
+}
+#projetos .tituloProjetos hr{
+  width: 100dvw;
 }
 
 .tituloProjetos{
@@ -180,14 +276,28 @@ body {
 .colProj a{
   color: orange;
 }
-
-.colProj img{
+@media(max-width: 2080px){
+  .colProj img{
     height: auto;
     display: block;
     width: 30dvw;
     height: 250px;
     cursor: pointer;
+    margin: 0;
 }
+ }
+
+ @media(max-width: 500px){
+  .colProj img{
+    height: auto;
+    display: block;
+    width: 100dvw;
+    height: 250px;
+    cursor: pointer;
+}
+ }
+
+
 
 /*footer*/
 
@@ -203,7 +313,8 @@ body {
   .footer-basic .social {
     text-align:center;
     padding-top: 38dvh;
- 
+
+  
   }
   
   .footer-basic .social > a {
