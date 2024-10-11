@@ -193,7 +193,7 @@ body {
 
 .descricao{
 
-    font-size: 25px;
+    font-size: 20px;
     color: #979DA8;
 
 
@@ -257,38 +257,44 @@ body {
 
 }
 #projetos .tituloProjetos hr{
-  width: 100dvw;
+  width: 98dvw;
 }
 
 .tituloProjetos{
-    margin-bottom: 2dvh;
+  margin: 0 0 2dvh -1.5dvw;
+
 }
 
 .projetos{
-    height: 100dvh;
+    height: 90dvh;
+    width: 90dvw;
+    margin: 0 0 0 2dvw;
 }
 
 .colProj{
     float: left;
-    margin: 1dvh 0dvw 1dvh 4dvh;
+    margin: 1dvh 0dvw 1dvh 2dvw;
 }
 
 .colProj a{
   color: orange;
 }
+
+
 @media(max-width: 2080px){
-  .colProj img{
+  .colProj img, iframe {
     height: auto;
     display: block;
-    width: 30dvw;
+    width: 28dvw;
     height: 250px;
     cursor: pointer;
     margin: 0;
+    
 }
  }
 
  @media(max-width: 500px){
-  .colProj img{
+  .colProj img, iframe{
     height: auto;
     display: block;
     width: 100dvw;
@@ -297,6 +303,35 @@ body {
 }
  }
 
+ .wrapper-div{
+  position: sticky; top: 0;
+  overflow-x: hidden;
+  display: flex;
+  width: 95vw;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin: -22px 0 0 10px;
+
+}
+
+.prev{
+  margin: -22px 0 0 20px;
+}
 
 
 /*footer*/
