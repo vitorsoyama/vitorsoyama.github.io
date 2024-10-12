@@ -266,7 +266,7 @@ body {
 }
 
 .projetos{
-    height: 90dvh;
+    height: auto;
     width: 90dvw;
     margin: 0 0 0 2dvw;
 }
@@ -308,6 +308,7 @@ body {
   overflow-x: hidden;
   display: flex;
   width: 95vw;
+  height: auto;
 }
 
 .prev, .next {
