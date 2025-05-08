@@ -11,7 +11,7 @@
   const proj06 = document.getElementById("projeto6");
 
 
-  function openImage(imgId){
+  function openImageDataScience(imgId){
     var captionText = document.getElementById("caption");
     var img01 = document.getElementById("img-01")
     var img02 = document.getElementById("img-02")
@@ -21,14 +21,31 @@
     var img06 = document.getElementById("img-06")
     modal.style.display = "block";
     captionText.innerHTML = this.alt;
-    img01.src = "img/" + imgId + "/proj-1.png" 
-    img02.src = "img/" + imgId + "/proj-2.png" 
-    img03.src = "img/" + imgId + "/proj-3.png" 
-    img04.src = "img/" + imgId + "/proj-4.png" 
-    img05.src = "img/" + imgId + "/proj-5.png" 
-    img06.src = "img/" + imgId + "/proj-6.png" 
+    img01.src = "src/images/data_science/" + imgId + "/proj-1.png" 
+    img02.src = "src/images/data_science/" + imgId + "/proj-2.png" 
+    img03.src = "src/images/data_science/" + imgId + "/proj-3.png" 
+    img04.src = "src/images/data_science/" + imgId + "/proj-4.png" 
+    img05.src = "src/images/data_science/" + imgId + "/proj-5.png" 
+    img06.src = "src/images/data_science/" + imgId + "/proj-6.png" 
   }
-
+  
+  function openImageDev(imgId){
+    var captionText = document.getElementById("caption");
+    var img01 = document.getElementById("img-01")
+    var img02 = document.getElementById("img-02")
+    var img03 = document.getElementById("img-03")
+    var img04 = document.getElementById("img-04")
+    var img05 = document.getElementById("img-05")
+    var img06 = document.getElementById("img-06")
+    modal.style.display = "block";
+    captionText.innerHTML = this.alt;
+    img01.src = "src/images/dev/" + imgId + "/proj-1.png" 
+    img02.src = "src/images/dev/" + imgId + "/proj-2.png" 
+    img03.src = "src/images/dev/" + imgId + "/proj-3.png" 
+    img04.src = "src/images/dev/" + imgId + "/proj-4.png" 
+    img05.src = "src/images/dev/" + imgId + "/proj-5.png" 
+    img06.src = "src/images/dev/" + imgId + "/proj-6.png" 
+  }
 
 
 
@@ -122,3 +139,41 @@ showSlides(slideIndex);function plusSlide(n) {
 }function nextSlide() {
   plusSlide(1);
 }
+
+showSlidesDev(slideIndex);function plusSlideDev(n) {
+  showSlidesDev(slideIndex += n);
+}function showSlidesDev(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide-dev");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}function prevSlideDev() {
+  plusSlideDev(-1);
+}function nextSlideDev() {
+  plusSlideDev(1);
+}
+
+
+const tabs = document.querySelectorAll('.tab-btn');
+
+tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
+
+const tabClicked = (tab) => {
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tab.classList.add('active');
+
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.classList.remove('show'));
+
+    const contentId = tab.getAttribute('content-id');
+    const content = document.getElementById(contentId);
+
+    content.classList.add('show');
+}
+
+const currentActiveTab = document.querySelector('.tab-btn.active');
+tabClicked(currentActiveTab);

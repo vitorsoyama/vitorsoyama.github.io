@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Vitor Soyama</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
 
 
 </head>
@@ -51,7 +51,7 @@
             </p>
         </div>
         <div class = "col">
-            <img src="img/profile.png" alt="">
+            <img src="src/images/profile.png" alt="">
         </div>
     </div>
     <div class = "sobre" id = "sobre">
@@ -103,112 +103,236 @@
         </div>
     </div>
 
-
-<div id = "projetos" class="projetos">
-    <div class="tituloProjetos" id="projetos">
+    <div class="tituloProjetos" >
         <hr><p class="titulo"> Projetos  </p> <p style="text-align: center; color: gray; font-size: 20px;">(Clique nas imagens para saber mais)</p><hr>
     </div>
-        <div class="wrapper-div" data-component="slideshow" role="list">
-            <div class="projetos slide">
-                <div>
-                    <div class = "colProj">
-                        <img id = "projeto1" src="img/projeto1/proj-6.png" alt="" onclick="openImage('projeto1')">
-                        <a href="https://colab.research.google.com/drive/1pphv5nFrvTZLKJseFsvVB0VPWCm5ac14">Link do projeto</a>
-                        <Br>
-                        <p  class = "descricao"> Analise estatística da Covid-19</p>
 
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto2" src="img/projeto2/proj-1.png" alt="" onclick="openImage('projeto2')">
-                        <a href="https://www.kaggle.com/code/vitorsoyama/credit-card-fraud-detection/edit">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Detecção de fraudes em trasações</p>
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto3" src="img/projeto3/proj-6.png" alt="" onclick="openImage('projeto3')">
-                        <a href="https://colab.research.google.com/drive/1zLkaMEK0xKG0k_bW3xyQMeAt0UbaS7sl">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Recomendador de música</p>
-                    </div>
-
-                </div>
-                <div>
-                    <div class = "colProj">
-                        <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiNjZjMjFkMDEtODQ2Yi00YTZlLWE2OTAtNzAwMTEwMWIyZTZiIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9" frameborder="0" allowFullScreen="true"></iframe>
-                        <br>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNjZjMjFkMDEtODQ2Yi00YTZlLWE2OTAtNzAwMTEwMWIyZTZiIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Projeto de PowerBI</p>
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto4" src="img/projeto4/proj-1.png" alt="" onclick="openImage('projeto4')">
-                        <a href="https://www.kaggle.com/code/vitorsoyama/notebooke412c7356c">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Previsão de demanda de bicicleta</p>
-                    </div>
-                    <div class = "colProj">
-                        <iframe title="Data science Insights"  src="https://app.powerbi.com/view?r=eyJrIjoiODE1NmYwMTItYWY1Mi00ZThmLWJjODMtN2JmZDU2YmRlNDhlIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9" frameborder="0" allowFullScreen="true"></iframe>
-                        <br>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiODE1NmYwMTItYWY1Mi00ZThmLWJjODMtN2JmZDU2YmRlNDhlIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Projeto de PowerBI 2</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="projetos slide">
-                <div>
-                    <div class = "colProj">
-                        <img id = "projeto7" src="img/projeto7/proj-6.png" alt="" onclick="openImage('projeto7')">
-                        <a href="https://colab.research.google.com/drive/1gApjL2fseMdJRAj1GGlnEOcpzqvgwWiT">Link do projeto</a>
-                        <Br>
-                            <p  class = "descricao"> Machine Learn aplicado a um problema</p>
-
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto8" src="img/em-breve.jpg" alt="" onclick="">
-                        <a href="http://www.freepik.com/">Downloaded from Freepik</a>
-                        <Br>
-                        <p  class = "descricao"> Em breve </p>
-
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto9" src="img/em-breve.jpg" alt="" onclick="">
-                        <a href="http://www.freepik.com/">Downloaded from Freepik</a>
-                        <Br>
-                        <p  class = "descricao"> Em breve </p>
-
-                    </div>
-                </div>
-                <div>
-                    <div class = "colProj">
-                        <img id = "projeto10" src="img/em-breve.jpg" alt="" onclick="">
-                        <a href="http://www.freepik.com/">Downloaded from Freepik</a>
-                        <Br>
-                        <p  class = "descricao"> Em breve </p>
-
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto11" src="img/em-breve.jpg" alt="" onclick="">
-                        <a href="http://www.freepik.com/">Downloaded from Freepik</a>
-                        <Br>
-                        <p  class = "descricao"> Em breve </p>
-
-                    </div>
-                    <div class = "colProj">
-                        <img id = "projeto12" src="img/em-breve.jpg" alt="" onclick="">
-                        <a href="http://www.freepik.com/">Downloaded from Freepik</a>
-                        <Br>
-                        <p  class = "descricao"> Em breve </p>
-
-                    </div>
-                </div>
-            </div>
-            <a class="prev" onclick="prevSlide()">&#10094;</a>
-            <a class="next" onclick="nextSlide()">&#10095;</a>
+    <div id = "container">
+        <div class = "tab-buttons">
+            <button class = "tab-btn active" content-id = "projetos-dev">
+                DEV
+            </button>
+            <button class = "tab-btn" content-id = "projetos">
+                Data science
+            </button>
         </div>
-</div>
+        <div class = "tab-contents">
+            <div id = "projetos-dev" class="content show">
+                <div class="wrapper-div" data-component="slideshow" role="list">
+                    <div class="projetos slide-dev">
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto1" src="src/images/dev/projeto1/proj-2.png" alt="" onclick="openImageDev('projeto1')">
+                                <a href="https://github.com/vitorsoyama/task_list_with_flask">Link do projeto</a>
+                                <Br>
+                                <p  class = "descricao"> Lista de tarefas via API </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto2" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto3" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+        
+                        </div>
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto4" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto5" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto6" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="projetos slide-dev">
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto7" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto8" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto9" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto10" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto11" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto12" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="prevSlideDev()">&#10094;</a>
+                    <a class="next" onclick="nextSlideDev()">&#10095;</a>
+        </div>
+            </div>
+            <div id = "projetos" class="content">
+
+                <div class="wrapper-div" data-component="slideshow" role="list">
+                    <div class="projetos slide">
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto1" src="src/images/data_science/projeto1/proj-6.png" alt="" onclick="openImageDataScience('projeto1')">
+                                <a href="https://colab.research.google.com/drive/1pphv5nFrvTZLKJseFsvVB0VPWCm5ac14">Link do projeto</a>
+                                <Br>
+                                <p  class = "descricao"> Analise estatística da Covid-19</p>
+
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto2" src="src/images/data_science/projeto2/proj-1.png" alt="" onclick="openImageDataScience('projeto2')">
+                                <a href="https://www.kaggle.com/code/vitorsoyama/credit-card-fraud-detection/edit">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Detecção de fraudes em trasações</p>
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto3" src="src/images/data_science/projeto3/proj-6.png" alt="" onclick="openImageDataScience('projeto3')">
+                                <a href="https://colab.research.google.com/drive/1zLkaMEK0xKG0k_bW3xyQMeAt0UbaS7sl">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Recomendador de música</p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class = "colProj">
+                                <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiNjZjMjFkMDEtODQ2Yi00YTZlLWE2OTAtNzAwMTEwMWIyZTZiIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                                <br>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNjZjMjFkMDEtODQ2Yi00YTZlLWE2OTAtNzAwMTEwMWIyZTZiIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Projeto de PowerBI</p>
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto4" src="src/images/data_science/projeto4/proj-1.png" alt="" onclick="openImageDataScience('projeto4')">
+                                <a href="https://www.kaggle.com/code/vitorsoyama/notebooke412c7356c">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Previsão de demanda de bicicleta</p>
+                            </div>
+                            <div class = "colProj">
+                                <iframe title="Data science Insights"  src="https://app.powerbi.com/view?r=eyJrIjoiODE1NmYwMTItYWY1Mi00ZThmLWJjODMtN2JmZDU2YmRlNDhlIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                                <br>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiODE1NmYwMTItYWY1Mi00ZThmLWJjODMtN2JmZDU2YmRlNDhlIiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Projeto de PowerBI 2</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="projetos slide">
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto7" src="src/images/data_science/projeto7/proj-6.png" alt="" onclick="openImageDataScience('projeto7')">
+                                <a href="https://colab.research.google.com/drive/1gApjL2fseMdJRAj1GGlnEOcpzqvgwWiT">Link do projeto</a>
+                                <Br>
+                                    <p  class = "descricao"> Machine Learn aplicado a um problema</p>
+
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto8" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto9" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class = "colProj">
+                                <img id = "projeto10" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto11" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+
+                            </div>
+                            <div class = "colProj">
+                                <img id = "projeto12" src="src/images/em-breve.jpg" alt="" onclick="">
+                                <a href="http://www.freepik.com/">Downloaded from Freepik</a>
+                                <Br>
+                                <p  class = "descricao"> Em breve </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+
+            </div>
+
+            
+            </div>
+        </div>
+        
+    </div>
     <div class="footer-basic" id="contatos">
         <footer>
             <div class="social">
@@ -273,8 +397,8 @@
       </div>
 </body>
 
-<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-<script src = "js\index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src = "src/javascript/index.js"></script>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 

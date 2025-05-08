@@ -250,13 +250,23 @@ body {
     color: #84B32D;
 }
 
+.projetos{
+  height: auto;
+  width: 90dvw;
+  margin: 0 0 0 2dvw;
+}
+
 #projetos{
-  display: inline-block;
-    margin-top: 3dvh;
-    padding-top: 4dvh;
+  margin-top: 3dvh;
+  padding-top: 4dvh;
 
 }
-#projetos .tituloProjetos hr{
+#projetos-dev{
+  margin-top: 3dvh;
+  padding-top: 4dvh;
+
+}
+.tituloProjetos hr{
   width: 98dvw;
 }
 
@@ -265,11 +275,44 @@ body {
 
 }
 
-.projetos{
-    height: auto;
-    width: 90dvw;
-    margin: 0 0 0 2dvw;
+.tab-buttons {
+  display: flex;
+  gap: 6px;
 }
+.tab-btn {
+  width: 100%;
+  border: none;
+  color: #020617;
+  background-color: #f0f8ff;
+  border-radius: 8px 8px 0px 0px;
+  font-weight: 500;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.tab-btn.active {
+  background-color: #c7d2fe;
+}
+
+.tab-btn:hover {
+  background-color: #a5b4fc;
+}
+
+
+.content {
+  display: none;
+}
+
+.content.show {
+  height: auto;
+  width: 90dvw;
+  margin: 0 0 0 2dvw;
+  display: inline-block;
+  margin-top: 3dvh;
+  padding-top: 4dvh;
+}
+
 
 .colProj{
     float: left;
