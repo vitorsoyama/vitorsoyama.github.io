@@ -51,6 +51,18 @@
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
+  //Atalho para fechar as imagens com esc
+  document.addEventListener('keydown', (event) =>{
+  if (event.key == "Escape") {
+    span.click();
+  }
+  if (event.key == "ArrowLeft") {
+    prevBtn.click();
+  }
+  if (event.key == "ArrowRight") {
+    nextBtn.click();
+  }
+});
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() { 
@@ -94,6 +106,9 @@ if(mq.matches){
       mainNav.style.display = "none";
       menuIcon.innerHTML = "MENU";
     }
+    mainNav.addEventListener('click', () =>{
+      menuIcon.click()
+    })
   });
 
   
@@ -156,6 +171,7 @@ showSlidesDev(slideIndex);function plusSlideDev(n) {
 }function nextSlideDev() {
   plusSlideDev(1);
 }
+
 
 
 const tabs = document.querySelectorAll('.tab-btn');
